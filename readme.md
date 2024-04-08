@@ -6,7 +6,7 @@ This is a project for Low-light image enhancement with edge AI computations usin
 LLIE approach: CPGA-Net  
 Python == 3.6
 
-## Installatino
+## Installation
 ### ONNX
 Follow this link [Jetson Zoo](https://elinux.org/Jetson_Zoo)
 1. onnxruntime
@@ -59,6 +59,7 @@ Here are some example images enhanced using the LLIE approach:
 ### TensorRT
 ![Image TRT](out_trt.jpg)
 
+Image From [LIME](https://ieeexplore.ieee.org/document/7782813)
 ## Issues
 TensorRT doesn't perform normally with unknown issue, 
 
@@ -67,4 +68,5 @@ TensorRT doesn't perform normally with unknown issue,
 2. [ONNX Official Documentation](https://onnx.ai/documentation/)
 3. [TensorRT Official Documentation](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html)
 4. [Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)
-5. 
+5. [EdgeAI LLIE NCS2 GitHub Repository](https://github.com/Shyandram/EdgeAI_LLIE_NCS2.git)
+6. [CPGA-Net-Pytorch GitHub Repository](https://github.com/Shyandram/CPGA-Net-Pytorch)
