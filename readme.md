@@ -36,8 +36,10 @@ torch.onnx.export(network, dummy_input, MODEL_NAME+'.onnx' )
 # ONNX
 ```
 python3 demo_onnx.py
-
+```
+You can try different execution ways, see [onnx doc](https://onnxruntime.ai/docs/execution-providers/)
 # TRT
+```
 trtexec --onnx=OV_enhance_color-llie-ResCBAM_g.onnx --saveEngine=CPGANet_engine.trt --explicitBatch --workspace=128
 python3 demo_trt.py
 ```
@@ -47,6 +49,12 @@ Image Resolution: 256x256
 Pytorch | ONNX (CUDA) | ONNX (TRT) | TensorRT |
 |----------|----------|----------|----------|
 | 139.343681 ms   | 110.399661 ms   |83.792326 ms   |72.907643 ms   |
+
+
+### Efficient Version (DGF)
+Pytorch | ONNX (CUDA) | ONNX (TRT) | TensorRT |
+|----------|----------|----------|----------|
+| 39.909654 ms   | 37.896626  ms   |32.811749 ms   | ? ms   |
 
 ## Results
 Here are some example images enhanced using the LLIE approach:
